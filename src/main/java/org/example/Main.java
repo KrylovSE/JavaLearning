@@ -1,20 +1,41 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        System.out.println("Привет Мир!"+" Я учусь программировать");
+        System.out.println("Учимся создавать переменные");
+        int a = 1;
+        System.out.println(a);
+        int b;
+        b = 2;
+        System.out.println("b = " + b);
+        float c = 3.5F;
+        System.out.println("c = " + c);
+        double d = 4.6;
+        System.out.println( "d = " + d);
+        boolean e = true;
+        System.out.println("e = " + e);
+        String f = "моя первая строка";
+        System.out.println("f = " + f);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Учимся работать с Boolean");
+        boolean j = b > c;
+        System.out.println("j = " + j);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println(3 > 2);
+
+        System.out.println("Учимся работать с математическими функциями");
+        double h = Math.sqrt(9);
+        System.out.println("h = " + h);
+        double i = 1 + 4 + Math.sqrt(9);
+        System.out.println("i = " + i);
+        double g = Math.cbrt(27);
+        System.out.println("g = " + g);
+        double k = Math.pow(3, 6);
+        System.out.println("k = " + k);
+//        for (int i = 1; i <= 5; i++) {
+//            System.out.println("i = " + i);
+//        }
     }
 }
 
