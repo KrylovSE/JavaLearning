@@ -3,15 +3,46 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Animal animal1 = new Animal();
-        animal1.getType();
-        animal1.setType("cat");
-        animal1.getType();
+//        Animal animal1 = new Animal();
+//        animal1.getType();
+//        animal1.setType("cat");
+//        animal1.getType();
+//
+//        Animal animal2 = new Animal();
+//        animal2.getType();
+//        animal2.setType("dog");
+//        animal2.getType();
+//
+//        animal1.setType("parrot");
+//        animal1.getType();
+//
+//        animal1.type = "crocodile";
 
-        Animal animal2 = new Animal();
-        animal2.getType();
-        animal2.setType("dog");
-        animal2.getType();
+
+         Auto myFirstAuto = new Auto();
+         myFirstAuto.setModel("pojero Sport");
+         System.out.println(myFirstAuto.getModel());
+
+         myFirstAuto.setWheals(4);
+         System.out.println(myFirstAuto.getWheals());
+
+         Ship ship1 = new Ship();
+         ship1.setDisplacement(8.5);
+         System.out.println(ship1.getDisplacement());
+
+//         ship1.setWheals(4);
+
+        Truck myTruck = new Truck();
+        myTruck.setPrice(10000);
+        System.out.println(myTruck.getPrice());
+        myTruck.setWheals(12);
+        System.out.println(myTruck.getWheals());
+        myTruck.setModel("MAN");
+        System.out.println(myTruck.getModel());
+
+
+        myTruck.maker = "gost";
+        myTruck.print();
 
 
 
