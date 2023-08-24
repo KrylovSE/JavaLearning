@@ -10,4 +10,12 @@ public class Ship extends Transport {
     public void setDisplacement(double displacement) {
         this.displacement = displacement;
     }
+
+    public Ship() {
+    }
+
+    public Ship(String type, String model, String maker, double displacement) {
+        super(type, model, maker);
+        setDisplacement(displacement);
+    }
 }

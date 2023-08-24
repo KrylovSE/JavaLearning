@@ -19,30 +19,62 @@ public class Main {
 //        animal1.type = "crocodile";
 
 
-         Auto myFirstAuto = new Auto();
-         myFirstAuto.setModel("pojero Sport");
-         System.out.println(myFirstAuto.getModel());
+//         Auto myFirstAuto = new Auto();
+//         myFirstAuto.setModel("pojero Sport");
+//         System.out.println(myFirstAuto.getModel());
+//
+//         myFirstAuto.setWheals(4);
+//         System.out.println(myFirstAuto.getWheals());
+//
+//         Ship ship1 = new Ship();
+//         ship1.setDisplacement(8.5);
+//         System.out.println(ship1.getDisplacement());
+//
+////         ship1.setWheals(4);
+//
+//        Truck myTruck = new Truck();
+//        myTruck.setPrice(10000);
+//        System.out.println(myTruck.getPrice());
+//        myTruck.setWheals(12);
+//        System.out.println(myTruck.getWheals());
+//        myTruck.setModel("MAN");
+//        System.out.println(myTruck.getModel());
+//
+//
+//        myTruck.maker = "gost";
+//        myTruck.print();
 
-         myFirstAuto.setWheals(4);
-         System.out.println(myFirstAuto.getWheals());
+        Transport myTransport = new Transport();
+        myTransport.testMethod();
+        myTransport.testMethod("test");
+        myTransport.testMethod(1);
+        myTransport.testMethod(3.5, "join");
+        myTransport.testMethod("join", 4.9, 10, 12, -6, 19, 503, -3);
 
-         Ship ship1 = new Ship();
-         ship1.setDisplacement(8.5);
-         System.out.println(ship1.getDisplacement());
+        Transport[] transportsArray = new Transport[10];
+        for (int i = 0; i < 10; i++) {
+            transportsArray[i] = new Transport();
+        }
 
-//         ship1.setWheals(4);
+        System.out.println(transportsArray.length);
+        transportsArray[5].setMaker("join");
+        System.out.println(transportsArray[5].getMaker());
 
-        Truck myTruck = new Truck();
-        myTruck.setPrice(10000);
-        System.out.println(myTruck.getPrice());
-        myTruck.setWheals(12);
-        System.out.println(myTruck.getWheals());
-        myTruck.setModel("MAN");
-        System.out.println(myTruck.getModel());
+        Auto auto1 = new Auto();
+        Ship ship1 = new Ship();
+        auto1.testMethod("test");
+        ship1.testMethod("test1");
 
+        Transport transport1 = new Transport("boat", "A1", "Germany");
+        System.out.println(transport1.getMaker());
+        System.out.println(transport1.getModel());
+        System.out.println(transport1.getType());
+//        System.out.println(transport1.getMaker() + " " + transport1.getModel());
 
-        myTruck.maker = "gost";
-        myTruck.print();
+        Transport transport2 = new Transport();
+
+        Ship ship2 = new Ship("type", "model", "maker", 8000.342);
+        System.out.println(ship2.getDisplacement());
 
 
 
