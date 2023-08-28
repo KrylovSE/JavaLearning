@@ -1,7 +1,31 @@
 package org.example;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
+
+
+
+        Calc calc1 = new Calc();
+        calc1.setNumber1();
+        calc1.setOperation();
+        calc1.setNumber2();
+        System.out.println(calc1.calculate());
+//        if (operation.equals("+")){
+//            System.out.println(num1 + num2);
+//        } else if (operation.equals("-")) {
+//            System.out.println(num1 - num2);
+//        } else if (operation.equals("*")) {
+//            System.out.println(num1 * num2);
+//        } else if (operation.equals("/")) {
+//            System.out.println(num1 / num2);
+//        } else {
+//            System.out.println("ОШИБКА! операция можеть быть только: +, -, *, /");
+//        }
+
 
 //        Animal animal1 = new Animal();
 //        animal1.getType();
@@ -44,37 +68,37 @@ public class Main {
 //        myTruck.maker = "gost";
 //        myTruck.print();
 
-        Transport myTransport = new Transport();
-        myTransport.testMethod();
-        myTransport.testMethod("test");
-        myTransport.testMethod(1);
-        myTransport.testMethod(3.5, "join");
-        myTransport.testMethod("join", 4.9, 10, 12, -6, 19, 503, -3);
-
-        Transport[] transportsArray = new Transport[10];
-        for (int i = 0; i < 10; i++) {
-            transportsArray[i] = new Transport();
-        }
-
-        System.out.println(transportsArray.length);
-        transportsArray[5].setMaker("join");
-        System.out.println(transportsArray[5].getMaker());
-
-        Auto auto1 = new Auto();
-        Ship ship1 = new Ship();
-        auto1.testMethod("test");
-        ship1.testMethod("test1");
-
-        Transport transport1 = new Transport("boat", "A1", "Germany");
-        System.out.println(transport1.getMaker());
-        System.out.println(transport1.getModel());
-        System.out.println(transport1.getType());
-//        System.out.println(transport1.getMaker() + " " + transport1.getModel());
-
-        Transport transport2 = new Transport();
-
-        Ship ship2 = new Ship("type", "model", "maker", 8000.342);
-        System.out.println(ship2.getDisplacement());
+//        Transport myTransport = new Transport();
+//        myTransport.testMethod();
+//        myTransport.testMethod("test");
+//        myTransport.testMethod(1);
+//        myTransport.testMethod(3.5, "join");
+//        myTransport.testMethod("join", 4.9, 10, 12, -6, 19, 503, -3);
+//
+//        Transport[] transportsArray = new Transport[10];
+//        for (int i = 0; i < 10; i++) {
+//            transportsArray[i] = new Transport();
+//        }
+//
+//        System.out.println(transportsArray.length);
+//        transportsArray[5].setMaker("join");
+//        System.out.println(transportsArray[5].getMaker());
+//
+//        Auto auto1 = new Auto();
+//        Ship ship1 = new Ship();
+//        auto1.testMethod("test");
+//        ship1.testMethod("test1");
+//
+//        Transport transport1 = new Transport("boat", "A1", "Germany");
+//        System.out.println(transport1.getMaker());
+//        System.out.println(transport1.getModel());
+//        System.out.println(transport1.getType());
+////        System.out.println(transport1.getMaker() + " " + transport1.getModel());
+//
+//        Transport transport2 = new Transport();
+//
+//        Ship ship2 = new Ship("type", "model", "maker", 8000.342);
+//        System.out.println(ship2.getDisplacement());
 
 
 
